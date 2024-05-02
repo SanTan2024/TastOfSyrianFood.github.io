@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed the Monster</title>
+    <link rel="stylesheet" href="../css/game3.css">
+</head>
+<body>
+    <h1>Feed the Monster!</h1>
+    <p>Drag and drop the right type of food into the monster's mouth and see how he reacts!</p>
+    
+    <div id="foods">
+        <img src="../assets/apple-65-300x291.png" alt="Apple" class="food" draggable="true">
+        <img src="../assets/pngtree-banana-yellow-banana-skewers-three-fruits-png-image_5944328.png" alt="Banana" class="food" draggable="true">
+        <img src="../assets/Pizza-Free-Download-PNG.png" alt="Pizza" class="food" draggable="true">
+    </div>
+    <div id="monster" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="../assets/cartoon-opossum-with-his-mouth-open.webp" alt="Monster" style="width: 200px;">
+    </div>
+    <p id="message"></p>
+    <!-- Go Back Button -->
+    <button onclick="goBack()">Go Back</button>
+    
+    <script>
+    function goBack() {
+        window.history.back(); // Go back to the previous page
+    }
+    </script>
+    <script src="../javascripts/game3.js"></script>
+</body>
+</html>

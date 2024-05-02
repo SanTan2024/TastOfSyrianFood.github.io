@@ -1,0 +1,20 @@
+#foods {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.food {
+    width: 100px;
+    cursor: pointer;
+}
+
+#monster {
+    margin-top: 20px;
+    border: 2px dashed #666;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

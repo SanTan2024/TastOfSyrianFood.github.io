@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentich Recipes</title>
+    
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/recipe_search.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/logo.svg" alt="The italian way" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="btn" class="nav-link"> Home </a>
+            <a href="about.html" class="btn" class="nav-link"> About us </a>
+            <a href="recipe_search.html" class="btn" class="nav-link"> Authentic Recipes </a>
+            <a href="games.html" class="btn" class="nav-link">Games  </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact us</a> 
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- end of nav -->
+    <main class="page">
+      <section class="about-page">
+        <article>
+          <p>
+          </p>
+          
+          <h2> Taste Of Syrian Food Search Bar</h2>
+          <p> 
+             
+          <p>
+            Just enter an ingredient or dish name, and our search bar will present you with a selection of relevant recipes. Whether you crave kebabs, tabbouleh, or a delectable baklava, you'll discover an array of dishes that cater to your palate.
+          </p>
+          
+        </article>
+
+        <!-- needs fixes -->
+
+        <img
+          src="./assets/Syrian-Foods-2-683x1024.webp"
+          alt="Fresh Ingredients"
+          class="img about-img"
+        />
+      </section>
+      
+
+
+      <section class="featured-recipes">
+        <h5 class="featured-title">Search For Syrina Food Recipes</h5>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search for recipes...">
+        <button type="submit" id="search-btn" class="btn" >Search now !!!</button>
+        <button id="suggest-btn" class="btn" >Give me a Random Recipe !!!</button>
+      </form>
+      <main>
+        <div id="results"></div>
+        <button id="load-more-btn" style="display: none;">Give Me More</button>
+      </main>  
+    <script src="./js/recipe_search.js"></script>
+  <!-- message -->
+  <section class="centered-content">
+    <div class="message-container">
+      <h1>Cook and Play: Syrian Style</h1>
+      <p>
+        Jump right in making the most popular authentic Syrian dishes
+        <a href="recipe_search.html" class="btn">Recipes Section</a> 
+        
+      </p>
+      <p>
+        Or try our favourite games to relax from cooking
+        <a href="games.html" class="btn">Games Section</a>
+         
+        
+      </p>
+      
+    </div>
+  </section>
+  <!-- end of message -->
+  <!-- message -->
+  <h5 style="text-align: center; font-weight: bold;">Most Played Games</h5>
+
+
+  </section>
+  <!-- end of message -->
+
+    <!-- games list -->
+    <div class="game-list">
+      <!-- single game -->
+      <a href="./single_games_html/Syrian_Chef_Challenge.html" class="game">
+        <img
+          src="./assets/games/OE612P0.jpg"
+          class="img recipe-img"
+          alt=""
+        />
+        
+        <h5 style="text-align: center; font-weight: bold;">Syrian Chef Challenge Game O_O</h5>
+
+
+        
+      </a>
+      <!-- end of single game -->
+      <!-- single game -->
+      <a href="./single_games_html/flappy_bird.html" class="game">
+        <img
+          src="./assets/games/3d-dice-outdoors_23-2151110348.jpg"
+          class="img recipe-img"
+          alt=""
+        />
+        <h5 style="text-align: center; font-weight: bold;">Flying Cube Challenge Game :P</h5>
+      </a>
+      <!-- end of single game -->
+      <!-- single game -->
+      <a href="./single_games_html/monsters.html" class="game">
+        <img
+          src="./assets/games/monsters.PNG"
+          class="img recipe-img"
+          alt=""
+        />
+        <h5 style="text-align: center; font-weight: bold;">Feed The Monster >_<</h5>
+      </a>
+      <!-- end of single game -->
+    </div>
+    <!-- end of games list -->
+    
+<!-- footer -->
+<footer class="page-footer">
+  <p style="text-align: right;">
+    &copy; <span id="date"></span>
+    <span class="footer-logo">Taste Of Syrian Food</span> Built by
+    <a href="https://github.com/SanTan2024">Hassan Alhawaj</a> <img src="./assets/GitHub-Logo.png" alt="GitHub" width="20" height="20"> |
+    <a href="./contact.html">Contact Us</a> | 
+    <a href="./about.html"> About </a>
+    
+  </p>
+</footer>
+
+<script src="./js/app.js"></script>
+
+</body>
+</html>

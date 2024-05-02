@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; }
+.game-container { display: flex; flex-direction: column; align-items: center; margin-top: 20px; }
+.dishes, .ingredients { display: flex; justify-content: space-around; margin-top: 20px; }
+.dish, .ingredient { padding: 10px; border: 1px solid #ccc; margin: 5px; border-radius: 5px; cursor: pointer; }
+.ingredient { background-color: #f4f4f4; }

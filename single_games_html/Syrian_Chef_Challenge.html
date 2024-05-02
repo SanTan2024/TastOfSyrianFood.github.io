@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syrian Chef Challenge</title>
+<link rel="stylesheet" href="../css/game1.css">
+</head>
+<body>
+<div class="game-container">
+  <h1>Syrian Chef Challenge</h1>
+  <p>Drag the ingredients to the correct dishes!</p>
+  <div class="dishes">
+    <div class="dish" id="tabbouleh">Tabbouleh</div>
+    <div class="dish" id="kebab">Kebab</div>
+    <div class="dish" id="baklava">Baklava</div>
+  </div>
+  <div class="ingredients">
+    <div class="ingredient" id="parsley" draggable="true">Parsley</div>
+    <div class="ingredient" id="meat" draggable="true">Meat</div>
+    <div class="ingredient" id="phyllo" draggable="true">Phyllo Dough</div>
+  </div>
+  <button onclick="checkAnswers()">Check Answers</button>
+  <!-- Button to go back -->
+  <button onclick="goBack()">Go Back</button>
+</div>
+<script src="../javascripts/game1.js"></script>
+<script>
+  // Function to handle going back
+  function goBack() {
+    window.history.back();
+  }
+</script>
+</body>
+</html>
